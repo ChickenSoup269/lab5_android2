@@ -5,14 +5,29 @@
 
     <translate
         android:fromYDelta="0"
-        android:toYDelta="-100"
-        android:duration="600"
-       />
+        android:toYDelta="-200"
+        android:duration="500"
+     />
 
     <translate
-        android:fromYDelta="-400"
+        android:fromYDelta="-200"
         android:toYDelta="0"
-        android:startOffset="600"
-        android:duration="600"
-       />
+        android:startOffset="500"
+        android:duration="500"
+   />
+
+    <!-- Thêm một lần nhún -->
+    <translate
+        android:fromYDelta="0"
+        android:toYDelta="-50"
+        android:startOffset="1000"
+        android:duration="250"
+      />
+
+    <translate
+        android:fromYDelta="-50"
+        android:toYDelta="0"
+        android:startOffset="1250"
+        android:duration="250"
+        />
 </set>

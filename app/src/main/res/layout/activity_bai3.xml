@@ -4,18 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3ebeff"
     tools:context=".Bai3">
-
-    <ImageView
-        android:id="@+id/imgViewCloud"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
 
     <TextView
         android:id="@+id/textView"
@@ -46,30 +36,40 @@
 
 <!-- Nội dung chính   -->
 
-    <Button
-        android:id="@+id/btnJump2"
-        android:layout_width="142dp"
-        android:layout_height="46dp"
-        android:text="JUMP"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:cornerRadius="20px"
+    <ImageView
+        android:id="@+id/imgViewCloud"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535" />
+        app:layout_constraintVertical_bias="0.276" />
+
+    <ImageView
+        android:id="@+id/imgViewCloud2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
 
     <ImageButton
         android:id="@+id/imgBtnFast"
-        style="@style/ButtonCustomGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:tint="@color/orangePrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.228"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.479"
+        app:layout_constraintVertical_bias="0.843"
         app:srcCompat="@drawable/baseline_keyboard_double_arrow_up_24" />
 
     <ImageButton
@@ -77,56 +77,75 @@
         style="@style/ButtonCustomGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475"
+        app:layout_constraintVertical_bias="0.78"
         app:srcCompat="@drawable/baseline_arrow_drop_up_24" />
 
     <ImageButton
-        android:id="@+id/imgBtnLow"
+        android:id="@+id/imgBtnRight2"
         style="@style/ButtonCustomGame"
+        android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542"
-        app:srcCompat="@drawable/baseline_keyboard_double_arrow_down_24" />
-
-    <ImageButton
-        android:id="@+id/imgBtnDown2"
-        style="@style/ButtonCustomGame"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537"
-        app:srcCompat="@drawable/baseline_arrow_drop_down_24" />
+        app:layout_constraintVertical_bias="0.843"
+        app:srcCompat="@drawable/baseline_arrow_right_24" />
 
     <ImageButton
         android:id="@+id/imgBtnLeft2"
         style="@style/ButtonCustomGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537"
+        app:layout_constraintVertical_bias="0.843"
         app:srcCompat="@drawable/baseline_arrow_left_24" />
 
     <ImageButton
-        android:id="@+id/imgBtnRight2"
+        android:id="@+id/imgBtnDown2"
         style="@style/ButtonCustomGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.228"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537"
-        app:srcCompat="@drawable/baseline_arrow_right_24" />
+        app:layout_constraintVertical_bias="0.904"
+        app:srcCompat="@drawable/baseline_arrow_drop_down_24" />
 
+    <Button
+        android:id="@+id/btnJump2"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/orangePrimary"
+        android:text="JUMP"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:cornerRadius="20px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <ImageButton
+        android:id="@+id/imgBtnLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:tint="@color/orangePrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803"
+        app:srcCompat="@drawable/baseline_keyboard_double_arrow_down_24" />
 
     <ImageView
         android:id="@+id/imgViewBird"
@@ -137,7 +156,19 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintVertical_bias="0.366"
+        />
+
+    <ImageView
+        android:id="@+id/imgViewBridKill"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -163,7 +194,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="©TranPhuocThien 2174801030127"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
